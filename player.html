@@ -43,7 +43,7 @@
       hls = new Hls({
         autoStartLoad: true,
         capLevelToPlayerSize: true,
-        startLevel: 1 // 預設從360p開始
+        startLevel: 0 // 預設從240p開始
       });
       hls.loadSource('master.m3u8');  // 你的 master playlist
       hls.attachMedia(video);
