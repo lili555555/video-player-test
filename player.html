@@ -81,9 +81,9 @@
     // 自動畫質切換邏輯（加平滑判斷）
     function updateAutoQuality(avgSpeed) {
       let newLevel;
-      if (avgSpeed < 1) {
+      if (avgSpeed < 20) {
         newLevel = 0;
-      } else if (avgSpeed < 2.5) {
+      } else if (avgSpeed < 21) {
         newLevel = 1;
       } else {
         newLevel = 2;
